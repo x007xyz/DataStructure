@@ -28,12 +28,18 @@ public class Main {
         }
         stack.pop();
         System.out.println(stack);*/
-        int opCount = 100000;
-        LoopQueue<Integer> loopQueue = new LoopQueue<>();
-        double time1 = testQueue(loopQueue, opCount);
-        System.out.println("LoopQueue, time: " + time1 + " s");
-        ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
-        double time2 = testQueue(arrayQueue, opCount);
-        System.out.println("ArrayQueue, time: " + time2 + " s");
+//        int opCount = 100000;
+//        LoopQueue<Integer> loopQueue = new LoopQueue<>();
+//        double time1 = testQueue(loopQueue, opCount);
+//        System.out.println("LoopQueue, time: " + time1 + " s");
+//        ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
+//        double time2 = testQueue(arrayQueue, opCount);
+//        System.out.println("ArrayQueue, time: " + time2 + " s");
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            linkedList.add(i, i);
+        }
+        linkedList.remove(2);
+        System.out.println(linkedList);
     }
 }
