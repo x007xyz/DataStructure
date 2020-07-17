@@ -21,25 +21,17 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        /*ArrayStack<Integer> stack = new ArrayStack<>();
-        for (int i = 0; i < 5; i++) {
-            stack.push(i);
-            System.out.println(stack);
+        BST<Integer> bst = new BST<>();
+        int[] nums = {5, 3, 6, 8, 4, 2};
+        for (int num: nums) {
+            bst.add(num);
         }
-        stack.pop();
-        System.out.println(stack);*/
-//        int opCount = 100000;
-//        LoopQueue<Integer> loopQueue = new LoopQueue<>();
-//        double time1 = testQueue(loopQueue, opCount);
-//        System.out.println("LoopQueue, time: " + time1 + " s");
-//        ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
-//        double time2 = testQueue(arrayQueue, opCount);
-//        System.out.println("ArrayQueue, time: " + time2 + " s");
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        for (int i = 0; i < 5; i++) {
-            linkedList.add(i, i);
-        }
-        linkedList.remove(2);
-        System.out.println(linkedList);
+//        bst.levelOrder();
+        System.out.println(bst);
+        bst.remove(3);
+        System.out.println();
+        System.out.println(bst);
+//        bst.preOrderNR();
+//        System.out.println(bst);
     }
 }
